@@ -3,21 +3,21 @@
 
 .search {
   padding: 3% 3% 3% 3%;
-  border: 1px green solid;
-  width: auto;
+  // border: 1px green solid;
+  // width: auto;
 
-  &__clearBtn {
-    // position: fixed;
-    // right: 40.5%;
-    margin: 2% 55%;
-    border-color: $secondary;
-    border-radius: 3px;
-    padding: 5px 15px;
+}
+#clearBtn {
+  position: absolute;
+  right: 40.5%;
+  margin-top: 2%;
+  border-color: $secondary;
+  border-radius: 3px;
+  padding: 5px 15px;
 
-    span{
-      color: $secondary;
-      @include font-bold()
-    }
+  span{
+    color: $secondary;
+    @include font-bold()
   }
 }
 
@@ -31,7 +31,7 @@
   background-color: #f6f6f6;
   width: 60%;
   overflow: auto;
-  border: 1px solid purple;
+  // border: 1px solid purple;
   z-index: 1;
   border-radius: 5px;
 }
@@ -45,7 +45,7 @@
   @include font-bold();
   padding: 10px 10px 10px 10px;
   border: none;
-  border-bottom: 1px solid #ddd;
+  border: 1px solid #ddd;
   // border: 1px solid lightgray;
   border-radius: 5px;
   &:focus {

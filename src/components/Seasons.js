@@ -23,6 +23,7 @@ export default class Seasons extends Component {
           <div className="custom-select"></div>
           <select 
             onChange={handleSeasonChange} 
+            defaultValue="all"
             // className="season__selection"
           >
             {showSeasons.map((season, index) => 

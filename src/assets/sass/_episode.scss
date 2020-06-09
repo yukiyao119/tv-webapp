@@ -1,10 +1,11 @@
 @import './assets/sass/variables';
 @import './assets/sass/mixins';
 
+
 .episode {
   margin-top: 30%;
   padding: 3% 3% 3% 3%;
-  border: 1px green solid;
+  // border: 1px green solid;
   width: auto;
   height: 50%;
 }
@@ -25,7 +26,7 @@
     position: relative;
     margin-top: 10px;
     padding: 10px 0;
-    border: 1px solid yellow;
+    // border: 1px solid yellow;
   }
 }
 
@@ -67,7 +68,7 @@
   width: auto;
   padding: 0;
   left: -10px;
-  border: 1px solid greenyellow;
+  // border: 1px solid greenyellow;
   
   .circle {
     top: -20px;
@@ -88,70 +89,4 @@
   margin-top: 2%;
   left: -10px;
 }
-
-//  .content {
-//    text-align: center;
-//    position: relative;
-//  }
-//  .avatar {
-//    width: 30px;
-//    height: 30px;
-//    display: block;
-//    border-radius: 50%;
-//    border: 6px solid $myGrey;
-//    position: absolute;
-//    margin: 0 auto;
-//    left: 0;
-//    right: 0;
-//    text-align: center;
-//    line-height: 30px;
-//    background: $secondary;
-//  }
-//  .content:before {
-//    content: '';
-//    width: 50px;
-//    height: 100px;
-//    left: 50%;
-//    margin-left: -2px;
-//    position: absolute;
-//  }
-//  li.down {
-//    .content:before {
-//      border-left: 4px solid $secondary;
-//      border-bottom: 4px solid $secondary;
-//      -webkit-border-radius: 0 20px;
-//      -moz-border-radius: 0 20px;
-//      border-radius: 0 20px;
-//    }
-//    .avatar {
-//      top: 80px;
-//      left: 100px;
-//    }
-//  }
-//  li.up {
-//    .content {
-//      margin-top: -106px;
-//      &:before {
-//        border-left: 4px solid $secondary;
-//      }
-//    }
-//    .date {
-//      margin-top: 106px;
-//    }
-//    .avatar {
-//      background: $secondary;
-//      margin-top: -30px;
-//    }
-//  }
-//  .rectangle {
-//    border: 1px solid $secondary;
-//    border-radius: 30px;
-//    height: 30px;
-//    width: 200px;
-//    top: -19px;
-//    position: relative;
-//    background: $secondary;
-//    line-height: 30px;
-//    text-align: center;
-//  }
  

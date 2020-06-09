@@ -153,7 +153,7 @@ export default class SearchBar extends Component {
     return ( // searchbar, dropdown click, summary
       <div className="search">
         {this.state.validInput ? <div>Search TV show</div> : 
-        <div className={this.state.validInput ? "" : "alert"}>
+        <div className={this.state.validInput ? "" : "invalid"}>
           Search TV show * Please enter valid title
         </div>}
 
@@ -162,7 +162,7 @@ export default class SearchBar extends Component {
             <input id="myInput"
               type="text"
               autoComplete="off"
-              placeholder={this.state.selectedShow.title == undefined ? "Please enter TV show title" : this.state.selectedShow.title}
+              placeholder={this.state.selectedShow.title === undefined ? "Please enter TV show title" : this.state.selectedShow.title}
               onChange={this.handleSearch} 
             />
             {this.state.searchedShows.map(show => 
@@ -179,7 +179,7 @@ export default class SearchBar extends Component {
         </div>
         </div>
         
-        <button className="search__clearBtn" onClick={this.handleClear}>
+        <button id="clearBtn" onClick={this.handleClear}>
           <span>Clear</span>
         </button>
 
