@@ -12,3 +12,25 @@
 // @mixin customMarginTop($top: 30%) {
 //   margin-top: 30%;
 // }
+
+@mixin mobile {
+    @media only screen and (max-width: 414px){
+        @content;
+    }
+}
+
+@mixin media-md {
+  @media screen and (min-width: 768px) {
+    @content;
+  }
+}
+@mixin media-lg {
+  @media screen and (min-width: 1024px) {
+    @content;
+  }
+}
+@mixin media-xl {
+  @media screen and (min-width: 1600px) {
+    @content;
+  }
+}

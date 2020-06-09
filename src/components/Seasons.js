@@ -21,9 +21,13 @@ export default class Seasons extends Component {
 
           <div className="season__header">Seasons</div>
           <div className="custom-select"></div>
+
           <select 
             onChange={handleSeasonChange} 
-            defaultValue="all"
+            placeholder="Please choose a season"
+            readonly={true}
+            searchable={false}
+            blurInputOnSelect={true}
             // className="season__selection"
           >
             {showSeasons.map((season, index) => 

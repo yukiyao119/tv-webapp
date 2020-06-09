@@ -12,13 +12,29 @@
 @import './assets/sass/search';
 @import './assets/sass/season';
 @import './assets/sass/episode';
+@import './assets/sass/responsive';
+
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  // width: 100%;
+  // border: 1px blue solid;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
 
 
 main {
   background-color: white;
-  width: auto;
+  width: 100vw;
   height: auto;
-  border: 1px yellow solid;
+  // border: 1px yellow solid;
   font-family: 'Lato', sans-serif;
 }
 
