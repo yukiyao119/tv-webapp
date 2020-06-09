@@ -1,0 +1,10 @@
+// Font Mixins
+@mixin body-font($size: 16pt) {
+  font-family: 'Lato', sans-serif;
+  font-weight: normal;
+}
+
+@mixin font-bold($size: 14pt) {
+  font-family: 'Lato', sans-serif;
+  font-weight: bold;
+}

@@ -1,0 +1,37 @@
+@import './assets/sass/variables';
+@import './assets/sass/mixins';
+
+.season {
+  display: block;
+  border: 1px orange solid;
+  position: relative;
+
+  &__summary {
+    margin-bottom: 2%;
+    padding: 2% 2% 2% 2%;
+    border: 1px gold solid;
+  }
+
+  &__title {
+    @include font-bold($size: 13pt);
+    p {
+      @include body-font($size: 16pt);
+    }
+  }
+
+  &__header {
+    margin-bottom: 1%;
+    @include font-bold($size: 13pt);
+  }
+
+  select {
+    width: 20%;
+    height: 34px;
+    padding: 30px;
+    @include font-bold($size: 14pt);
+
+  }
+  // &__selection {
+  // }
+
+}

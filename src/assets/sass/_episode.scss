@@ -1,0 +1,157 @@
+@import './assets/sass/variables';
+@import './assets/sass/mixins';
+
+.episode {
+  margin-top: 30%;
+  padding: 3% 3% 3% 3%;
+  border: 1px green solid;
+  width: auto;
+  height: 50%;
+}
+
+
+#timeline {
+  // margin: 30px 0;
+  position: relative;
+  padding: 0;
+  list-style: none;
+  border-top: 18px double $myGrey;
+  display: table;
+  table-layout: fixed;
+  width: 100%;
+  //  border-spacing: 30px 0;
+  li {
+    display: table-cell;
+    position: relative;
+    margin-top: 10px;
+    padding: 10px 0;
+    border: 1px solid yellow;
+  }
+}
+
+
+.tooltip{
+  margin: 0 0 0 -25%;
+  width: 50%;
+  height: fit-content;
+  border-radius: 2px;
+  position: absolute;
+  z-index: 1;
+  bottom: 200%;
+  box-shadow: 0 1px 3px;
+  left: 50%;
+  // border: 1px solid blue;
+  display: grid;
+  grid-template-columns: 1.5fr 3fr 0.1fr;
+  grid-gap: 10px;
+  padding: 10px;
+
+  &__col2{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  &__title{
+    @include font-bold($size: 18pt)
+  }
+
+  &__sum{
+    @include body-font($size: 13pt)
+  }
+
+}
+
+.dot{
+  width: auto;
+  padding: 0;
+  left: -10px;
+  border: 1px solid greenyellow;
+  
+  .circle {
+    top: -20px;
+    left: -10px;
+    // right: 0px;
+    padding: 0;
+    width: 10px;
+    height: 10px;
+    background: $secondary;
+    border: 6px solid $myGrey;
+    border-radius: 50%;
+    display: block;
+    position: absolute;
+  }
+}
+
+.title {
+  margin-top: 2%;
+  left: -10px;
+}
+
+//  .content {
+//    text-align: center;
+//    position: relative;
+//  }
+//  .avatar {
+//    width: 30px;
+//    height: 30px;
+//    display: block;
+//    border-radius: 50%;
+//    border: 6px solid $myGrey;
+//    position: absolute;
+//    margin: 0 auto;
+//    left: 0;
+//    right: 0;
+//    text-align: center;
+//    line-height: 30px;
+//    background: $secondary;
+//  }
+//  .content:before {
+//    content: '';
+//    width: 50px;
+//    height: 100px;
+//    left: 50%;
+//    margin-left: -2px;
+//    position: absolute;
+//  }
+//  li.down {
+//    .content:before {
+//      border-left: 4px solid $secondary;
+//      border-bottom: 4px solid $secondary;
+//      -webkit-border-radius: 0 20px;
+//      -moz-border-radius: 0 20px;
+//      border-radius: 0 20px;
+//    }
+//    .avatar {
+//      top: 80px;
+//      left: 100px;
+//    }
+//  }
+//  li.up {
+//    .content {
+//      margin-top: -106px;
+//      &:before {
+//        border-left: 4px solid $secondary;
+//      }
+//    }
+//    .date {
+//      margin-top: 106px;
+//    }
+//    .avatar {
+//      background: $secondary;
+//      margin-top: -30px;
+//    }
+//  }
+//  .rectangle {
+//    border: 1px solid $secondary;
+//    border-radius: 30px;
+//    height: 30px;
+//    width: 200px;
+//    top: -19px;
+//    position: relative;
+//    background: $secondary;
+//    line-height: 30px;
+//    text-align: center;
+//  }
+ 
