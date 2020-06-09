@@ -31,7 +31,7 @@ export default class Episode extends Component {
               </div>
               <div className="bubble__col2">
                 <div className="bubble__title">{selectedEpisode.name}</div>
-                <div className="bubble_sum">{selectedEpisode.summary == undefined ? null : selectedEpisode.summary.replace('<p>', '').replace('</p>', '')}</div>
+                <div className="bubble_sum">{selectedEpisode.summary === undefined ? null : selectedEpisode.summary.replace('<p>', '').replace('</p>', '')}</div>
               </div>
               <div className="close alert" onClick={handleClose}> X </div>
             </div>

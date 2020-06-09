@@ -15,8 +15,15 @@ export default class Seasons extends Component {
         {selectedShow.id === undefined ? null :
         <div className="season">
           <div className="season__summary">
-          <div className="season__title">{selectedShow.title}   lato bold 18pt</div>
-            <p>lato reg 16pt {selectedShow.summary.replace('<p>', '').replace('</p>', '')}</p>
+            <div className="letter">
+              <div className="season__title"> 
+                {selectedShow.title}   lato bold 18pt
+              </div>
+              <p>
+                lato reg 16pt {selectedShow.summary.replace('<p>', '').replace('</p>', '')}
+              </p>
+              {/* <div className="backpage"></div><div className="backpage"></div><div></div> */}
+            </div>
           </div>
 
           <div className="season__header">Seasons</div>
