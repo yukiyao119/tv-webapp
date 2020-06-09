@@ -15,15 +15,15 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
 
 ### Solutions provided
-For this take home challenge, I was able to review React framework as well as learning SASS from scratch. For this project, I was able to finish features like:
+For this take home challenge, I had a chance to review React as well as learn a lot of SASS. I was able to finish features like:
 - Search TV title from the API and fetch TV Show information that includes seasons and episodes. 
 - Display information in different layout through dropdown, select, timeline and tooltip.
-- Built clear button to reset the searching.
-- Mostly matched provided file in terms of design elements(font and font size).
-- Responsive design with desktop and mobile. 
+- Built clear button to reset the search.
+- Mostly matched provided file in terms of design elements(font, font size and color).
+- Provided responsive design with desktop and mobile. 
 
 ### Solutions needed
-- Need to figure out the layout for season dropdown select. It has default layout now. 
+- Figure out the custom layout for season select dropdown. It is by default now. 
 - Also figure out how select works with responsive design especially with small screen like mobile.
 - Timeline and tooltip posistions need to be improved.
 
