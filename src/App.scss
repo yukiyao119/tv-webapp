@@ -32,7 +32,8 @@ code {
 
 main {
   background-color: white;
-  width: 100vw;
+  // width: 100vw;
+  max-width: 100%;
   height: auto;
   // border: 1px yellow solid;
   font-family: 'Lato', sans-serif;

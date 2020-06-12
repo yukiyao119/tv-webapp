@@ -36,6 +36,10 @@
   border-radius: 5px;
 }
 
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
 #myInput {
   position: relative;
   box-sizing: border-box;
@@ -57,11 +61,15 @@
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   column-gap: 10px;
+  grid-row-gap: 50px;
   text-align: left;
   align-items: center;
 
   &:hover {
     background-color: #ddd;
+    span {
+      @include font-bold()
+    }
   }
 
 }
